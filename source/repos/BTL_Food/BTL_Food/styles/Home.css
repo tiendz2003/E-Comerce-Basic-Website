@@ -1,0 +1,130 @@
+﻿/* styles/home.css */
+@font-face {
+    font-family: 'Locket'; /* Nên đặt tên trong dấu nháy */
+    src: url('../Font/locket.otf') format('opentype'), /* Sửa "otf" thành "opentype" */
+    url('../Font/locket.woff2') format('woff2'), /* Nên thêm định dạng WOFF2 để tối ưu */
+    url('../Font/locket.woff') format('woff'); /* Thêm WOFF để hỗ trợ nhiều trình duyệt */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Locket', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Định dạng cho tiêu đề */
+.home-title {
+    font-family: Locket, cursive;
+    font-size: 24px;
+    font-style: italic;
+    color: #333; /* Màu chữ tối */
+    margin-top: 20px;
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+    line-height: 1.5; /* Khoảng cách giữa các dòng */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+    /* Thêm hiệu ứng hover cho tiêu đề */
+    .home-title:hover {
+        color: #ff0000; /* Đổi màu chữ khi hover */
+    }
+
+
+.home-an {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Khoảng cách giữa các mục */
+}
+
+.col-food {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-top: 50px;
+    width: calc(25% - 25px); /* Bốn mục liên tiếp */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex; /* Sử dụng flexbox cho nội dung bên trong */
+    flex-direction: column; /* Xếp chồng các vật phẩm theo chiều dọc*/
+    align-items: center; /* Căn giữa các mục */
+}
+
+    .col-food:hover {
+        transform: scale(1.05);
+    }
+
+.card-food {
+    padding: 10px;
+    text-align: center;
+    flex: 1; /* Cho phép kéo dài */
+    display: flex;
+    flex-direction: column; /* Xếp chồng các vật phẩm theo chiều dọc */
+}
+
+.card-header {
+    flex: 1; /* Cho phép hình ảnh chiếm không gian có sẵn */
+    margin-bottom: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 170px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Duy trì tỷ lệ khung hình */
+    border-radius: 3px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+    .card-title a {
+        text-decoration: none;
+        color: inherit; /* Kế thừa màu sắc từ cha mẹ */
+    }
+
+.card-price {
+    font-size: 1.1em;
+    color: #eb7708; /* Màu xanh theo giá */
+    font-weight: bold;
+}
+
+/* Thêm breakpoint cho màn hình lớn */
+@media (min-width: 1400px) {
+    .main-wrapper {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-food {
+        width: calc(33.333% - 20px); /* 3 cột cho màn hình medium */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-food {
+        width: calc(50% - 15px); /* 2 cột cho tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-food {
+        width: 100%;
+        margin: 10px 0; /* Giảm margin cho mobile */
+    }
+
+    .home-title {
+        font-size: 20px; /* Giảm font size cho mobile */
+    }
+}

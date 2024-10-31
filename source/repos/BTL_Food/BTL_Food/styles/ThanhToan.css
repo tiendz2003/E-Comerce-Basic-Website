@@ -1,0 +1,57 @@
+﻿/* ThanhToan.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Màu nền trang */
+    margin: 0;
+    padding: 20px;
+}
+
+.checkout-container {
+    max-width: 600px; /* Chiều rộng tối đa của khung thanh toán */
+    margin: 0 auto; /* Canh giữa khung */
+    background-color: #fff; /* Màu nền của khung */
+    padding: 20px; /* Đệm trong khung */
+    border-radius: 8px; /* Bo góc khung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+h2 {
+    text-align: center; /* Canh giữa tiêu đề */
+    color: #333; /* Màu chữ tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Khoảng cách giữa các nhóm trường */
+}
+
+.form-input {
+    display: block; /* Hiển thị như khối */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Đệm trong trường */
+    border: 1px solid #ddd; /* Đường viền */
+    border-radius: 4px; /* Bo góc */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+    .form-input:focus {
+        border-color: #007bff; /* Đổi màu viền khi có tiêu điểm */
+        outline: none; /* Bỏ viền ngoài */
+    }
+
+.btn-submit {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Đệm trong nút */
+    background-color:#ff6a00; /* Màu nền nút */
+    color: #fff; /* Màu chữ nút */
+    border: none; /* Bỏ đường viền */
+    border-radius: 4px; /* Bo góc */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Đổi con trỏ chuột khi rê */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+    .btn-submit:hover {
+        background-color: #ff6a00; /* Đổi màu nền khi rê chuột */
+    }

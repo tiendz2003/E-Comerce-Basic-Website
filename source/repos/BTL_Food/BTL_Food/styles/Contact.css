@@ -1,0 +1,63 @@
+﻿/* Container cho trang liên hệ */
+.contact-container {
+    max-width: 600px; /* Kích thước tối đa cho container */
+    margin: 0 auto; /* Căn giữa bảng điều khiển */
+    padding: 30px; /* Padding cho bên trong container */
+    background-color: #f9f9f9; /* Màu nền nhạt cho container */
+    border: 1px solid #ddd; /* Viền mỏng xung quanh */
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+    /* Tiêu đề */
+    .contact-container h1 {
+        text-align: center; /* Căn giữa tiêu đề */
+        color: #333; /* Màu chữ cho tiêu đề */
+    }
+
+/* Định dạng cho các nhóm biểu mẫu */
+.form-group {
+    margin-bottom: 20px; /* Khoảng cách giữa các nhóm biểu mẫu */
+}
+
+    /* Định dạng cho nhãn */
+    .form-group label {
+        display: block; /* Hiển thị nhãn dưới dạng khối */
+        margin-bottom: 5px; /* Khoảng cách dưới nhãn */
+        font-weight: bold; /* Chữ đậm */
+    }
+
+/* Định dạng cho các ô nhập liệu */
+.form-input {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ccc; /* Viền xung quanh */
+    border-radius: 4px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
+    box-sizing: border-box; /* Bao gồm padding vào tổng chiều rộng */
+}
+
+/* Định dạng cho nút gửi */
+.btnSubmit {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Khoảng cách bên trong */
+    background-color: #ff6a00; /* Màu nền cho nút */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Xóa viền */
+    border-radius: 5px; /* Bo tròn cho nút */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    font-size: 18px; /* Kích thước chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+    .btnSubmit:hover {
+        background-color: #bd5706; /* Đổi màu nền khi hover */
+    }
+
+/* Định dạng cho nhãn thông báo */
+.message-label {
+    margin-top: 10px; /* Khoảng cách trên cho nhãn thông báo */
+    font-size: 14px; /* Kích thước chữ cho nhãn */
+    color: #4CAF50; /* Màu chữ cho nhãn thông báo */
+    text-align: center; /* Căn giữa chữ thông báo */
+}

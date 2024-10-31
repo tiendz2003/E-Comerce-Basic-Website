@@ -1,0 +1,84 @@
+﻿/* Reset một số thuộc tính mặc định */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Phông chữ chính */
+    background-color: #f8f9fa; /* Màu nền nhẹ */
+}
+
+/* Khối chính của trang */
+.main {
+    display: flex; /* Sử dụng flexbox để căn giữa các phần tử */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao đầy đủ của cửa sổ */
+}
+
+/* Container chính */
+.container {
+    background-color: #ffffff; /* Màu nền trắng */
+    padding: 20px; /* Padding cho container */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    width: 400px; /* Chiều rộng cố định */
+}
+
+/* H2 tiêu đề cho đăng nhập và đăng ký */
+h2 {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ tối */
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+/* Định dạng các trường nhập liệu */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Độ rộng 100% */
+    padding: 10px; /* Padding cho trường nhập */
+    margin-bottom: 15px; /* Khoảng cách dưới trường nhập */
+    border: 1px solid #ccc; /* Viền mặc định */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 14px; /* Kích thước chữ trong trường nhập */
+}
+
+/* Nút Đăng nhập và Đăng ký */
+.Button {
+    background-color: #e74c3c; /* Màu nền đỏ cho nút */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Xóa viền */
+    border-radius: 5px; /* Bo tròn các góc */
+    padding: 10px 20px; /* Padding cho nút */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    width: 100%; /* Chiều rộng 100% */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+    /* Thay đổi màu nền khi hover */
+    .Button:hover {
+        background-color: #c0392b; /* Màu nền đỏ đậm khi hover */
+    }
+
+/* Thông tin và liên kết */
+.form-info {
+    text-align: center; /* Căn giữa */
+    margin-top: 15px; /* Khoảng cách trên */
+}
+
+/* Thông điệp lỗi hoặc thông báo */
+p {
+    color: #e74c3c; /* Màu lỗi đỏ */
+    text-align: center; /* Căn giữa */
+    margin-top: 5px; /* Khoảng cách trên */
+    font-size: 14px; /* Kích thước ban đầu */
+}
+
+/* Cấu trúc lại các phần */
+.form_action {
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+}

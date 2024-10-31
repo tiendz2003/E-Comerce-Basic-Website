@@ -1,0 +1,78 @@
+﻿/* GioHang.css */
+@font-face {
+    font-family: Locket; /* Nên đặt tên trong dấu nháy */
+    src: url('../Font/locket.otf') format('opentype'), /* Sửa "otf" thành "opentype" */
+    url('../Font/locket.woff2') format('woff2'), /* Nên thêm định dạng WOFF2 để tối ưu */
+    url('../Font/locket.woff') format('woff'); /* Thêm WOFF để hỗ trợ nhiều trình duyệt */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Đặt font chữ và màu nền cho toàn bộ trang */
+body {
+    font-family: Locket,Arial,sans-serif;
+    background-color: #f9f9f9; /* Màu nền sáng */
+    margin: 0;
+    padding: 20px; /* Đệm quanh trang */
+}
+
+/* Phần tóm tắt giỏ hàng */
+.cart-summary {
+    margin-top: 20px; /* Khoảng cách trên phần tóm tắt */
+    padding: 15px; /* Đệm trong phần tóm tắt */
+    background-color: #fff; /* Màu nền trắng cho phần tóm tắt */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Tiêu đề của phần tóm tắt */
+h3 {
+    margin: 0;
+    font-size: 1.5em; /* Kích thước chữ cho tiêu đề */
+    color: #333; /* Màu chữ cho tiêu đề */
+}
+
+/* Định dạng bảng */
+table {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    border-collapse: collapse; /* Gộp viền các ô */
+    background-color: #fff; /* Màu nền cho bảng */
+    border-radius: 8px; /* Bo góc bảng */
+    overflow: hidden; /* Ẩn viền ngoài */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho bảng */
+}
+
+/* Định dạng các ô trong bảng */
+th, td {
+    padding: 10px; /* Đệm trong ô */
+    text-align: left; /* Canh trái chữ trong ô */
+    border-bottom: 1px solid #ddd; /* Đường viền dưới ô */
+}
+
+/* Định dạng cho tiêu đề cột */
+th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề cột */
+    font-weight: bold; /* Chữ đậm cho tiêu đề cột */
+    color: #333; /* Màu chữ cho tiêu đề cột */
+}
+
+/* Hiệu ứng khi rê chuột qua hàng */
+tr:hover {
+    background-color: #f9f9f9; /* Màu nền khi rê chuột qua hàng */
+}
+
+/* Định dạng nút xóa */
+.btn-xoa {
+    background-color: #dc3545; /* Màu nền nút xóa */
+    color: white; /* Màu chữ nút */
+    border: none; /* Bỏ viền */
+    border-radius: 4px; /* Bo góc nút */
+    padding: 5px 10px; /* Đệm cho nút */
+    cursor: pointer; /* Con trỏ chuột khi rê qua nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+    /* Hiệu ứng khi rê chuột qua nút xóa */
+    .btn-xoa:hover {
+        background-color: #c82333; /* Màu nền khi rê chuột qua nút xóa */
+    }

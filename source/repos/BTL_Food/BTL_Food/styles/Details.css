@@ -1,0 +1,140 @@
+﻿/* Container chính cho trang chi tiết món ăn */
+.food-detail-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Căn chỉnh chi tiết món ăn thành hai phần */
+.food-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+
+.sidebar-1 {
+    flex: 1;
+    max-width: 600px; /* Increase max width further if needed */
+}
+
+
+.img-detail img {
+    width: 100%;
+    height: 95%;
+    max-width: 500px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cột chứa thông tin chi tiết món ăn */
+.sidebar-2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tên món ăn */
+.name-detail h6 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #7b0d80;
+}
+
+/* Mô tả món ăn */
+.mota-detail p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Giá món ăn */
+.price-detail p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Phần chứa điều chỉnh số lượng */
+.soluong-detail {
+    display: flex;
+    gap: 8px; /* Khoảng cách giữa các nút và ô nhập */
+    margin-bottom: 10px;
+}
+
+/* Nút tăng/giảm số lượng */
+.quantity-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 4px 8px; /* Giảm kích thước của nút */
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .quantity-btn:hover {
+        background-color: #e0e0e0;
+    }
+
+/* Ô nhập số lượng */
+#quantity {
+    width: 50px; /* Kích thước nhỏ gọn hơn */
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Định dạng cho khu vực thêm vào giỏ hàng */
+.themgiohang {
+    margin-top: 10px; /* Khoảng cách trên cho khối thêm vào giỏ hàng */
+}
+
+/* Định dạng cho nút thêm vào giỏ hàng */
+.btnAdd {
+    background-color: #bc0303; /* Màu nền cho nút */
+    color: white; /* Màu chữ trắng */
+    padding: 5px 10px; /* Padding cho nút */
+    border: none; /* Xóa viền */
+    border-radius: 4px; /* Bo tròn cho nút */
+    cursor: pointer; /* Con trỏ chuột khi chỉ vào nút */
+    font-size: 16px; /* Kích thước chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+    .btnAdd:hover {
+        background-color: #ac0303; /* Đổi màu nền khi hover */
+    }
+
+    .btnAdd:active {
+        background-color: #950404; /* Đổi màu khi nhấn */
+    }
+
+/* Mobile: width <740px */
+
+@media only screen and (max-width: 46.1875em) {
+    .sidebar-2 {
+        display: none;
+    }
+
+    .sidebar-1 {
+        width: 100%;
+    }
+}
+
+/* Tablet: width >=740px and width <1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+/* Mobile và tablet width <1024px */
+@media only screen and (max-width: 63.9375em) {
+}
