@@ -40,9 +40,16 @@
                     <div class="container">
                         <ul class="menu-list">
                             <li class="menu-list-item"><a href="Home.aspx" class="menu-link">TRANG CHỦ</a></li>
-                            <li class="menu-list-item"><a href="Home.aspx" class="menu-link">THỜI TRANG NAM</a></li>
-                            <li class="menu-list-item"><a href="Home.aspx" class="menu-link">LÀM ĐẸP</a></li>
-                            <li class="menu-list-item"><a href="Home.aspx" class="menu-link">THỂ THAO</a></li>
+                            <li class="menu-list-item drop-down">
+                                SẢN PHẨM
+                                <ul class="drop-down-list">
+                                    <li class="menu-list-item"><a href="category-items.aspx" class="menu-link">THỜI TRANG NAM</a></li>
+                                    <li class="menu-list-item"><a href="category-items.aspx" class="menu-link">LÀM ĐẸP</a></li>
+                                    <li class="menu-list-item"><a href="category-items.aspx" class="menu-link">THỂ THAO</a></li>
+                                </ul>
+                                
+                            </li>
+                            
                             <li class="menu-list-item"><a href="GioHang.aspx" class="menu-link">GIỎ HÀNG</a></li>                          
                             <li class="menu-list-item"><a href="ThanhToan.aspx " class ="menu-link">THANH TOÁN</a></li>
                             <li class="menu-list-item"><a href="Contact.aspx" class="menu-link">LIÊN HỆ  </a></li>

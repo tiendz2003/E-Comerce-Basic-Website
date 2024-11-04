@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Chi tiết sản phẩm" Language="C#" MasterPageFile="~/MasterPage/Page.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="BTL_Food.Details" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

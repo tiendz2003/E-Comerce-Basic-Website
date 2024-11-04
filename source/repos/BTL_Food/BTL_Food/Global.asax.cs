@@ -11,6 +11,7 @@ namespace BTL_Food
     public class Global : HttpApplication
     {
         public const string USER = "DSUser";
+        public const string PRODUCT = "Product";
 
         protected void Application_Start(object sender, EventArgs e)
         {

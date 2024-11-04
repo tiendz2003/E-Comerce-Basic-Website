@@ -102,8 +102,11 @@
     <Content Include="BtlWeb\Contact.aspx" />
     <Content Include="BtlWeb\Details.aspx" />
     <Content Include="BtlWeb\GioHang.aspx" />
+    <Content Include="BtlWeb\QLMH.aspx" />
+    <Content Include="BtlWeb\QLTK.aspx" />
     <Content Include="BtlWeb\Search.aspx" />
     <Content Include="BtlWeb\SignInSignUp.aspx" />
+    <Content Include="BtlWeb\category-items.aspx" />
     <Content Include="Global.asax" />
     <Content Include="img\ao-nam.jpg" />
     <Content Include="img\ao-nu.jpg" />
@@ -123,6 +126,7 @@
     <Content Include="styles\Home.css" />
     <Content Include="styles\page.css" />
     <Content Include="styles\PageRespotion.css" />
+    <Content Include="styles\QL.css" />
     <Content Include="styles\SignInSignUp.css" />
     <Content Include="styles\ThanhToan.css" />
     <Content Include="Web.config" />
@@ -149,6 +153,20 @@
     <Compile Include="BtlWeb\GioHang.aspx.designer.cs">
       <DependentUpon>GioHang.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BtlWeb\QLMH.aspx.cs">
+      <DependentUpon>QLMH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BtlWeb\QLMH.aspx.designer.cs">
+      <DependentUpon>QLMH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BtlWeb\QLTK.aspx.cs">
+      <DependentUpon>QLTK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BtlWeb\QLTK.aspx.designer.cs">
+      <DependentUpon>QLTK.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BtlWeb\Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +180,13 @@
     </Compile>
     <Compile Include="BtlWeb\SignInSignUp.aspx.designer.cs">
       <DependentUpon>SignInSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BtlWeb\category-items.aspx.cs">
+      <DependentUpon>category-items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BtlWeb\category-items.aspx.designer.cs">
+      <DependentUpon>category-items.aspx</DependentUpon>
     </Compile>
     <Compile Include="data\Category.cs" />
     <Compile Include="data\Cart.cs" />
@@ -182,6 +207,13 @@
     </Compile>
     <Compile Include="BtlWeb\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="MasterPage\Page.Master.cs">
       <DependentUpon>Page.Master</DependentUpon>
@@ -210,6 +242,7 @@
   <ItemGroup>
     <Content Include="MasterPage\Page.Master" />
     <Content Include="Font\locket.otf" />
+    <Content Include="MasterPage\Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
