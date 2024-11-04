@@ -1,4 +1,4 @@
-﻿* {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,7 +13,18 @@
 html {
     scroll-behavior: smooth;
 }
-
+/*drop down*/
+.drop-down{
+    position:relative;
+}
+.drop-down-list{
+    display:none;
+    position:absolute;
+}
+.drop-down:hover .drop-down-list{
+    display: block;
+    background-color:white;
+}
 
 
 body {
@@ -36,8 +47,6 @@ a {
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
-
-
 }
 
 
@@ -135,6 +144,8 @@ header-middle-center {
     padding: 10px 20px; /* Giảm khoảng cách giữa các phần tử bên trong nút */
     border-radius: 99px;
     color: var(--key);
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .header-sign {
@@ -169,15 +180,23 @@ header-middle-center {
 
 .header-bottom {
 
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--white);
-    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
-    z-index: 4;
-    display: flex;
-    justify-content: center; /* Đảm bảo menu dính vào giữa */
+position: sticky;
+
+top: 0;
+
+left: 0;
+
+right: 0;
+
+background-color: var(--white);
+
+box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+
+z-index: 4;
+
+display: flex;
+
+justify-content: center; /* Đảm bảo menu dính vào giữa */
 }
 
 .menu-list {
@@ -185,10 +204,9 @@ header-middle-center {
     align-items: center;
     justify-content: center; /* Căn giữa các mục trong menu */
     height: 49px;
-  
     white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+    /* overflow-x: clip; */
+    /* overflow-y: clip; */
     padding: 0; /* Đảm bảo không có khoảng cách padding thêm */
     margin: 0; /* Đảm bảo không có khoảng cách margin thêm */
 }
